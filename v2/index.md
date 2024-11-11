@@ -84,6 +84,7 @@ sponsored by Amazon.
    + [cdk diff](ref-cli-cmd-diff.md)
    + [cdk docs](ref-cli-cmd-docs.md)
    + [cdk doctor](ref-cli-cmd-doctor.md)
+   + [cdk gc](ref-cli-cmd-gc.md)
    + [cdk import](ref-cli-cmd-import.md)
    + [cdk init](ref-cli-cmd-init.md)
    + [cdk list](ref-cli-cmd-list.md)
