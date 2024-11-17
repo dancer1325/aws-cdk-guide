@@ -3,8 +3,10 @@
 This is the GitHub repository for the [AWS CDK Developer Guide](https://docs.aws.amazon.com/cdk/latest/guide/home.html). 
 You're welcome to [report issues](https://github.com/awsdocs/aws-cdk-guide/issues/new) with the documentation here or, if you have a moment, to submit a Pull Request with your suggested changes. PRs should target the main branch, not master, which has been deprecated.
 
-* `v1` - contains the Markdown files for the CDK v1 Developer Guide
-* `v2` - contains the Markdown files for the CDK v2 Developer Guide
+* `v1`
+  * == CDK v1 Developer Guide
+* `v2`
+  * == CDK v2 Developer Guide
 
 Feel free to make a Pull Request against only one of these content sets (we'll make sure it gets into both).
 
@@ -12,10 +14,9 @@ Issues reported through the Feedback link at the bottom of the individual pages 
 Amazon issue tracker and may not appear here. However, we try to track most substantive AWS CDK Developer Guide work on GitHub 
 so the community can see, comment, and contribute.
 
-> :memo: **NOTE** -
-> The Markdown files in this repository are an *output* of the AWS CDK Developer Guide build process, not the actual source files. 
-Periodically, we update the Markdown files here from our builds. Changes may appear on docs.aws.amazon.com before they appear
-here.
+* Markdown files | this repository
+  * 👀== *OUTPUT* of the AWS CDK Developer Guide build process 👀
+    * != ACTUAL source files
 
 ## Other Documentation Issues
 
@@ -24,8 +25,9 @@ here.
 
 ## Project Board
 
-Have a look at the AWS CDK Developer Guide [Project Board](https://github.com/awsdocs/aws-cdk-guide/projects/1) 
-to see what we're working on at the moment. Note that items on the Wishlist may not be in any particular order. You can help us prioritize our work by +1'ing issues that are important to you.
+* AWS CDK Developer Guide [Project Board](https://github.com/awsdocs/aws-cdk-guide/projects/1)
+  * current working on at the moment
+  * items | Wishlist, NOT particular ordered
 
 ## Contributor Grant of License
 
