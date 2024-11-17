@@ -1,12 +1,39 @@
 # What is the AWS CDK?<a name="home"></a>
 
-The AWS Cloud Development Kit \(AWS CDK\) is an open\-source software development framework for defining cloud infrastructure in code and provisioning it through AWS CloudFormation\.
-
-The AWS CDK consists of two primary parts:
-+ **[AWS CDK Construct Library](constructs.md)** – A collection of pre\-written modular and reusable pieces of code, called constructs, that you can use, modify, and integrate to develop your infrastructure quickly\. The goal of the AWS CDK Construct Library is to reduce the complexity required to define and integrate AWS services together when building applications on AWS\.
-+ **[AWS CDK Command Line Interface \(AWS CDK CLI\)](cli.md)** – A command line tool for interacting with CDK apps\. Use the CDK CLI to create, manage, and deploy your AWS CDK projects\. The CDK CLI is also referred to as the CDK Toolkit\.
-
-The AWS CDK supports TypeScript, JavaScript, Python, Java, C\#/\.Net, and Go\. You can use any of these supported programming languages to define reusable cloud components known as [constructs](constructs.md)\. You compose these together into [stacks](stacks.md) and [apps](apps.md)\. Then, you deploy your CDK applications to AWS CloudFormation to provision or update your resources\.
+* AWS Cloud Development Kit \(AWS CDK\)
+  * := open-source software development framework / 
+    * allows
+      * defining cloud infrastructure -- via -- code
+      * provisioning cloud infrastructure -- via -- AWS CloudFormation 
+  * supports
+    * TypeScript,
+    * JavaScript,
+    * Python,
+    * Java,
+    * C#/.Net,
+    * Go
+  * == **[AWS CDK Construct Library](constructs.md)** + **[AWS CDK Command Line Interface (AWS CDK CLI)](cli.md)**
+    * [AWS CDK Construct Library](constructs.md)
+      * == collection of constructs
+        * constructs == pre-written modular and reusable pieces of code 
+          * / can be
+            * modified
+            * integrated
+          * | before supported languages
+      * uses
+        * develop your infrastructure quickly
+      * goal
+        * reduce the complexity to define & integrate AWS services together | building applications | AWS
+    * **[AWS CDK Command Line Interface (AWS CDK CLI)](cli.md)**
+      * == CL tool / -- for interacting with -- CDK apps
+      * named ALSO CDK Toolkit
+      * uses, about your AWS CDK projects, 
+        * create,
+        * manage,
+        * deploy
+  * see
+    * [stacks](stacks.md)
+    * [apps](apps.md)
 
 ![\[\]](http://docs.aws.amazon.com/cdk/v2/guide/images/AppStacks.png)
 
@@ -19,29 +46,60 @@ The AWS CDK supports TypeScript, JavaScript, Python, Java, C\#/\.Net, and Go\. Y
 
 ## Benefits of the AWS CDK<a name="home-benefits"></a>
 
-Use the AWS CDK to develop reliable, scalable, cost\-effective applications in the cloud with the considerable expressive power of a programming language\. This approach yields many benefits, including:
+* **Develop and manage your IaC**  <a name="home-benefits-iac"></a>
+  * *infrastructure as code*
+    * allows, via programmatic, descriptive and declarative way, to
+      * create,
+      * deploy,
+      * maintain infrastructure
+    * see [Infrastructure as code](https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/infrastructure-as-code.html)
+  * infrastructure + application code + configuration | 1! place
+  * employ software engineering best practices
+    * code reviews,
+    * unit tests,
+    * source control
+  * / 
+    * reliable,
+    * scalable,
+    * cost-effective
 
-**Develop and manage your infrastructure as code \(IaC\)**  <a name="home-benefits-iac"></a>
-Practice *infrastructure as code* to create, deploy, and maintain infrastructure in a programmatic, descriptive, and declarative way\. With IaC, you treat infrastructure the same way developers treat code\. This results in a scalable and structured approach to managing infrastructure\. To learn more about IaC, see [ Infrastructure as code](https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/infrastructure-as-code.html) in the *Introduction to DevOps on AWS Whitepaper*\.  
-With the AWS CDK, you can put your infrastructure, application code, and configuration all in one place, ensuring that you have a complete, cloud\-deployable system at every milestone\. Employ software engineering best practices such as code reviews, unit tests, and source control to make your infrastructure more robust\.
+* **Define your cloud infrastructure -- via -- general-purpose programming languages**  <a name="home-benefits-languages"></a> 
+  * -- via -- your preferred supported language -> you can use elements:
+    * parameters,
+    * conditionals,
+    * loops,
+    * composition,
+    * inheritance
+  * recommendations
+    * application logic's programming language == infrastructure's programming language 
 
-**Define your cloud infrastructure using general\-purpose programming languages**  <a name="home-benefits-languages"></a>
-With the AWS CDK, you can use any of the following programming languages to define your cloud infrastructure: TypeScript, JavaScript, Python, Java, C\#/\.Net, and Go\. Choose your preferred language and use programming elements like parameters, conditionals, loops, composition, and inheritance to define the desired outcome of your infrastructure\.  
-Use the same programming language to define your infrastructure and your application logic\.  
-Receive the benefits of developing infrastructure in your preferred IDE \(Integrated Development Environment\), such as syntax highlighting and intelligent code completion\.  
+    ![\[\]](http://docs.aws.amazon.com/cdk/v2/guide/images/CodeCompletion.png)
 
-![\[\]](http://docs.aws.amazon.com/cdk/v2/guide/images/CodeCompletion.png)
+* **Deploy infrastructure -- through -- AWS CloudFormation**  <a name="home-benefits-cfn"></a>
+  * With AWS CloudFormation, you can perform infrastructure deployments
+    * predictably
+    * repeatedly,
+    * rollback on error 
 
-**Deploy infrastructure through AWS CloudFormation**  <a name="home-benefits-cfn"></a>
-AWS CDK integrates with AWS CloudFormation to deploy and provision your infrastructure on AWS\. AWS CloudFormation is a managed AWS service that offers extensive support of resource and property configurations for provisioning services on AWS\. With AWS CloudFormation, you can perform infrastructure deployments predictably and repeatedly, with rollback on error\. If you are already familiar with AWS CloudFormation, you don’t have to learn a new IaC management service when getting started with the AWS CDK\.
-
-**Get started developing your application quickly with constructs**  <a name="home-benefits-constructs"></a>
-Develop faster by using and sharing reusable components called constructs\. Use low\-level constructs to define individual AWS CloudFormation resources and their properties\. Use high\-level constructs to quickly define larger components of your application, with sensible, secure defaults for your AWS resources, defining more infrastructure with less code\.  
-Create your own constructs that are customized for your unique use cases and share them across your organization or even with the public\.
+* **Get started developing your application quickly with constructs**  <a name="home-benefits-constructs"></a>
+  * allows
+    * developing faster 
+  * types of constructs
+    * low-level constructs
+      * define individual AWS CloudFormation resources + their properties
+    * high-level constructs
+      * define larger components of your application /
+        * defaults for your AWS resources
+          * sensible,
+          * secure
+  * your own constructs /
+    * customizable
+    * share them | ACROSS your organization or with the public
 
 ## Example of the AWS CDK<a name="home-example"></a>
 
-The following is an example of using the AWS CDK Constructs Library to create an Amazon Elastic Container Service \(Amazon ECS\) service with AWS Fargate \(Fargate\) launch type\. For more details of this example, see [Example: Create an AWS Fargate service using the AWS CDK](ecs_example.md)\.
+* _Example:_ create an Amazon ECS / AWS Fargate launch type
+  * see [Example: Create an AWS Fargate service using the AWS CDK](ecs_example.md)
 
 ------
 #### [ TypeScript ]
@@ -258,33 +316,41 @@ This class produces an AWS CloudFormation [template of more than 500 lines](http
 
 ## AWS CDK features<a name="home-features"></a>
 
-### The AWS CDK GitHub repository<a name="home-features-repo"></a>
+### The AWS CDK GitHub repository<a name="home-features-repo"></a>
 
-For the official AWS CDK GitHub repository, see [ aws\-cdk](https://github.com/aws/aws-cdk)\. Here, you can submit [issues](https://github.com/aws/aws-cdk/issues), view our [license](https://github.com/aws/aws-cdk/blob/main/LICENSE), track [releases](https://github.com/aws/aws-cdk/releases), and more\.
-
-Because the AWS CDK is open\-source, the team encourages you to contribute to make it an even better tool\. For details, see [Contributing to the AWS Cloud Development Kit \(AWS CDK\)](https://github.com/aws/aws-cdk/blob/main/CONTRIBUTING.md)\.
+* see [aws-cdk](https://github.com/aws/aws-cdk)
 
 ### The AWS CDK API reference<a name="home-features-api"></a>
 
-The AWS CDK Construct Library provides APIs to define your CDK application and add CDK constructs to the application\. For more information, see the [AWS CDK API Reference](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-construct-library.html)\.
+* AWS CDK Construct Library
+  * provides
+    * APIs 
+      * see [AWS CDK API Reference](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-construct-library.html)
 
 ### The Construct Programming Model<a name="home-features-cpm"></a>
 
-The Construct Programming Model \(CPM\) extends the concepts behind the AWS CDK into additional domains\. Other tools using the CPM include:
-+ [CDK for Terraform](https://www.terraform.io/docs/cdktf/index.html) \(CDKtf\)
-+ [CDK for Kubernetes](https://cdk8s.io/) \(CDK8s\)
-+ [Projen](https://github.com/projen/projen), for building project configurations
+* Construct Programming Model \(CPM\)
+  * concepts behind the AWS CDK -- are extended into -- additional domains
+  * used by
+    + [CDK for Terraform](https://www.terraform.io/docs/cdktf/index.html) \(CDKtf\)
+    + [CDK for Kubernetes](https://cdk8s.io/) \(CDK8s\)
+    + [Projen](https://github.com/projen/projen), for building project configurations
 
 ### The Construct Hub<a name="home-features-hub"></a>
 
-The [Construct Hub](https://constructs.dev/) is an online registry where you can find, publish, and share open\-source AWS CDK libraries\.
+* [Construct Hub](https://constructs.dev/)
+  * == ONLINE registry abut open-source AWS CDK libraries, -- to --
+    * find,
+    * publish,
+    * share 
 
 ## Next steps<a name="home-next"></a>
 
-To get started with using the AWS CDK, see [Getting started with the AWS CDK](getting_started.md)\.
+* see [Getting started with the AWS CDK](getting_started.md)
 
 ## Learn more<a name="home-learn"></a>
 
+* TODO:
 To continue learning about the AWS CDK, see the following:
 + **[Learn AWS CDK core concepts](core_concepts.md)** – Important concepts and terms for the AWS CDK\.
 + **[AWS CDK Workshop](https://cdkworkshop.com/)** – Hands\-on workshop to learn and use the AWS CDK\.
