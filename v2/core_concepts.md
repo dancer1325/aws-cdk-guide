@@ -1,14 +1,10 @@
 # Learn AWS CDK core concepts<a name="core_concepts"></a>
 
-Learn core concepts behind the AWS Cloud Development Kit \(AWS CDK\)\.
-
 ## AWS CDK and IaC<a name="concepts-iac"></a>
 
-The AWS CDK is an open\-source framework that you can use to manage your AWS infrastructure using code\. This approach is known as *infrastructure as code \(IaC\)*\. By managing and provisioning your infrastructure as code, you treat your infrastructure in the same way that developers treat code\. This provides many benefits, such as version control and scalability\. To learn more about IaC, see [What is Infrastructure as Code?](https://aws.amazon.com/what-is/iac/)
+* see [index.md](home.md#benefits-of-the-aws-cdka-namehome-benefitsa)
 
 ## AWS CDK and AWS CloudFormation<a name="concepts-cfn"></a>
-
-The AWS CDK is tightly integrated with AWS CloudFormation\. AWS CloudFormation is a fully managed service that you can use to manage and provision your infrastructure on AWS\. With AWS CloudFormation, you define your infrastructure in templates and deploy them to AWS CloudFormation\. The AWS CloudFormation service then provisions your infrastructure according to the configuration defined on your templates\.
 
 AWS CloudFormation templates are *declarative*, meaning they declare the desired state or outcome of your infrastructure\. Using JSON or YAML, you declare your AWS infrastructure by defining AWS *resources* and *properties*\. Resources represent the many services on AWS and properties represent your desired configuration of those services\. When you deploy your template to AWS CloudFormation, your resources and their configured properties are provisioned as described on your template\.
 
